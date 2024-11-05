@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+    body h1 {
+        font-size: 18px;
+        font-weight: 800px !important;
+    }
+    body h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    body h3{
+        font-size: 14px;
+    
+    }
+    
+    body h4{
+        font-size: 12px;
+    }
+    
+    #detail{
+        font-size: 16px;
+    }
+    
+    #hapusmenu{
+        font-size: 18px;
+    }
+    
+}
+
+@media (min-width: 576px) {
+    body h1 {
+        font-size: 22px;
+        font-weight: 800px !important;
+    }
+    body h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    body h3{
+        font-size: 18px;
+    
+    }
+    
+    body h4{
+        font-size: 16px;
+    }
+    
+    #detail{
+        font-size: 12px;
+    }
+    
+    #hapusmenu{
+        font-size: 22px;
+    }
+    
+}
+
+
+
+
+/* RIWAYAT **************************************************************************************************************************************************/
+
+
+
+/* CSS untuk desktop */
+@media (min-width: 768px) {
+    .select-menu {
+        width: 100px;
+ 
+        margin-top: 30px; /* Ubah margin sesuai kebutuhan untuk tampilan desktop */
+    }
+
+
+  }
+  
+  /* CSS untuk mobile */
+  @media (max-width: 767px) {
+    .select-menu {
+        width: 100px;
+
+        margin-top: 20px; /* Ubah margin sesuai kebutuhan untuk tampilan mobile */
+    }
+
+
+  }
+
+.select-menu .select-btn{
+    display: flex;
+    height: 40px;
+    background: #fff;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 0;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    height: 40px;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+    margin-left: 10px;
+}
+
+.options .option:hover{
+    background: #f2f2f2;
+}
+
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+
+/* DASBOR ******************************************************************************************************************************************************************/
+@media (max-width: 576px) {
+    .slmt-dtg .img-dasbor2{
+        width: 55px;
+        height: 55px;
+    }
+    .txt-dsbr {
+        margin-left: 20px;
+    }
+    .card3{
+        margin-top: 5%;
+    }
+ 
+
+    
+    .card .card-body .img-dasbor{
+        width: 30px;
+        height: 30px;
+    }
+    .card .card-body .card-text1{
+        margin-top: 10%;
+    }
+    .card .card-body .card-text2{
+        margin-top: -10%;
+    }
+}
+
+@media (min-width: 576px) {
+    .slmt-dtg .img-dasbor2{
+        width: 60px;
+        height: 60px;
+    }
+    .txt-dsbr {
+        margin-left: 20px;
+    }
+    .card .card-body{
+        margin-bottom: -20px;
+    }
+    .card .card-body .img-dasbor{
+        width: 50px;
+        height: 50px;
+    }
+    .card .card-body .card-text1{
+        margin-top: 5%;
+    }
+    .card .card-body .card-text2{
+        margin-top: -3%;
+    }
+}
+
+/* PENCATATAN *******************************************************************************************************************************************************/
+@media (max-width: 767px) {
+    .col-xl-3 {
+      flex: 0 0 50%; /* Kartu akan memiliki lebar 50% saat lebar layar kurang dari 768px */
+      max-width: 50%; /* Mengatur lebar maksimum kartu menjadi 50% */
+    }
+  }
+
+  .bg-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+  }
+  
+  .bg-circle a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+
+#card-slide{
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0 10px 0 10px;
+}
+
+#jumalahpesanan, #jummlahpesanan1{
+    width: 80%;
+
+}
+
+.card-barang {
+    margin: 0 10px 0 10px;
+}
+
+.card-barang img{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+#card-slide::-webkit-scrollbar {
+    width: 0px; /* Menghilangkan scrollbar */
+}
+
+
+.card-title,
+.card-text {
+    font-size: 20px; /* Ukuran teks normal */
+}
+
+@media (max-width: 576px) {
+    .card-barang img {
+        width: 100%;
+        object-fit: cover;
+        height: 125px; /* Mengurangi tinggi gambar pada tampilan kecil */
+    }
+
+    .card-barang2 img {
+        width: 100%;
+        object-fit: cover;
+        height: 125px; /* Mengurangi tinggi gambar pada tampilan kecil */
+    }
+
+    .card-title,
+    .card-text {
+        font-size: 14px; /* Ukuran teks lebih kecil untuk tampilan kecil */
+    }
+
+    #swiper-card {
+        white-space: nowrap;
+    }
+
+    #img-menu{
+        height: 250px; object-fit: cover;
+    }
+
+    #img-keranjang{
+        height: 120px;
+        width: 150px; 
+        object-fit: cover;
+        margin-left: -61%;
+        border-radius: 15px !important;
+   
+    }
+
+ 
+
+    #bawah-keranjang{
+        margin-bottom: 180px;
+    }
+
+   .card-body1{
+    margin-top: -27%;
+    margin-left: 40%;
+   }
+
+   #btn-keranjang{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+
+   #plusminusKeranjang{  
+    margin-top: -7%;
+    font-size: 16px;
+    }
+
+    .card-title{
+        font-size: 18px;
+    }
+    
+    .text-angka{
+        font-size: 16px;
+    }
+
+    .bx{
+        font-size: 1.5rem;
+    }
+
+    #jumlahpesanan, #jumlahpesanan1{
+        width: 80%;
+    }
+
+    .check-input-label{
+        margin-top: -7px;
+    }
+}
+
+@media (min-width: 577px) {
+   
+    #img-menu{
+        height: 450px; object-fit: cover;
+    }
+
+    #keranajang1{
+        margin-top: 60px;
+    }
+
+    #img-keranjang{
+        height: 200px;
+        width: 450px; 
+        object-fit: cover;
+  
+        border-radius: 15px !important;
+    }
+
+    #bawah-keranjang{
+        margin-bottom: 190px;
+    }
+
+
+
+
+    #btn-keranjang{
+        padding-left: 250px;
+        padding-right: 250px;
+    
+       }
+
+    .card-body1{
+        margin-top: 20px;
+    }
+
+    .bx{
+        font-size: 1.7rem;
+    }
+
+    .text-angka{
+        font-size: 18px;
+  
+    }
+
+  }
+
+  .bg-circle {
+    background-color: #03C3EC;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+/* PROFIL ******************************************************************************************************************************************************/
+.symmetrical-img {
+    height: 200px; /* Sesuaikan tinggi gambar */
+    width: 200px; /* Sesuaikan lebar gambar */
+    object-fit: cover; /* Untuk memastikan gambar sesuai di dalam lingkaran */
+}
+
+/* Atur responsivitas untuk gambar simetris */
+@media (max-width: 568px) {
+    .symmetrical-img {
+        height: 150px; /* Sesuaikan tinggi gambar untuk tampilan responsif */
+        width: 150px; /* Sesuaikan lebar gambar untuk tampilan responsif */
+    }
+
+    .popup__content .container1 h1 {
+        font-size: 18px !important;
+    }
+
+    .container-fluid .col-md-6{
+        margin-top: 5%;
+    }
+
+    #logoutAkun{
+        font-size: 18px;
+    }
+
+    #hapusAkun{
+        font-size: 18px;
+    }
+}
+
+
+.col {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px; /* Optional: tambahkan padding bawah agar garis tidak terlalu dekat dengan teks */
+}
+
+.btn {
+    width: 100%;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; /* Menempatkan popup di atas elemen lain */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.popup1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; /* Menempatkan popup di atas elemen lain */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.popup2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; /* Menempatkan popup di atas elemen lain */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.popup3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; /* Menempatkan popup di atas elemen lain */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.popup4 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; /* Menempatkan popup di atas elemen lain */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.popup5 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; /* Menempatkan popup di atas elemen lain */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.popup6 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999; /* Menempatkan popup di atas elemen lain */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+
+.popup__content {
+    width: 90%; /* Lebar konten popup */
+    max-width: 500px; /* Maksimum lebar konten */
+    background-color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transform: scale(.25);
+    transition: all .5s .1s;
+}
+
+.popup__img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.popup__header {
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Mengubah ukuran popup saat tampilan mobile */
+@media screen and (max-width: 768px) {
+    .popup__content {
+        width: 95%; /* Lebar konten popup pada layar kecil */
+    }
+    
+}
+
+.col-form-label {
+    margin-right: 10px; /* Atur margin kanan pada elemen dengan kelas col-form-label */
+}
+
+
+#popup:target {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#popup:target .popup__content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#popup1:target {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#popup1:target .popup__content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#popup2:target {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#popup2:target .popup__content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#popup3:target {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#popup3:target .popup__content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#popup4:target {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#popup4:target .popup__content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#popup5:target {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#popup5:target .popup__content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#popup6:target {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+}
+
+#popup6:target .popup__content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+@media (min-width: 577px) {
+    #img-keranjang1{
+        max-height: 90%;
+        object-fit: cover;
+        border-radius: 15px !important;
+        margin-bottom: 5%;
+    }
+
+    #img-keranjang2{
+        max-height: 90%;
+        object-fit: cover;
+        border-radius: 15px !important;
+    }
+
+    .card-body1 .peritem .per-item{
+        padding-top: 4%;
+      }
+
+}
+
+
+/* Styling untuk layar lebih kecil dari 576px */
+@media (max-width: 576px) {
+    .row.g-0 .img-1 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .row.g-0 .txt-1 {
+        margin-top: -32%;
+      padding-left: 40%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    #img-keranjang1{
+     
+        height: 100%;
+        width: 100%; 
+        object-fit: cover;
+        border-radius: 15px !important;
+   
+       
+    }
+
+    #img-keranjang2{
+        margin-top: 13%;
+        margin-bottom: 40%;
+        height: 100%;
+        width: 100%; 
+        object-fit: cover;
+        border-radius: 15px !important;
+   
+    }
+
+    .row.g-0 .img-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .row.g-0 .txt-2 {
+        margin-top: -7%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .card-body1 .peritem .per-item{
+        margin-top: -2%;
+      }
+    
+  }
+  
